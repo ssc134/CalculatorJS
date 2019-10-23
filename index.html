@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CalculatorJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="calculator-class">
+        <input type="number" class="input-box" placeholder="Enter a number" id="operand1">
+        <select id = "operator" >
+            <option value="+">+  (Add)</option>
+            <option value="-">-  (Subtract)</option>
+            <option value="*">*  (Multiply)</option>
+            <option value="/">/  (Divide)</option>
+        </select>
+        <input class="input-box" type="number" placeholder="Enter a number" id="operand2">
+        <hl>=</hl>
+        <input class="input-box" type="number" id="result">
+        <button onclick="calc();" type="button" id="evaluateBtn" title="Evaluate">Evaluate</button>
+        <br>
+        <button onclick="copy1();" type="button" id="copyBtn1" title="Copy result to inputbox">Copy</button>
+        <button onclick="copy2();" type="button" id="copyBtn2" title="Copy result to inputbox">Copy</button>
+    </div>
+</body>
+</html>
